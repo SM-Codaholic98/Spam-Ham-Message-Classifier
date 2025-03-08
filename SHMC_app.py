@@ -2,8 +2,8 @@ from flask import Flask, request, render_template
 from flask_cors import cross_origin
 import pickle
 
-model = pickle.load(open("D:\\EDA\\Spam-Ham_Message_Classifier v1.0\\Spam-Ham_Message_Classifier.pkl", "rb"))
-vectorizer = pickle.load(open("D:\\EDA\\Spam-Ham_Message_Classifier v1.0\\CountVectorizer.pkl", "rb"))
+model = pickle.load(open("Spam-Ham_Message_Classifier.pkl", "rb"))
+vectorizer = pickle.load(open("CountVectorizer.pkl", "rb"))
 
 app = Flask(__name__)
 
